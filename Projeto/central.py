@@ -9,20 +9,6 @@ df = df.iloc[:, :-1]
 df.columns = ['user_id', 'game_name', 'component_name', 'value']
 df_play = df[df['component_name'] == 'play']
 df_purchase = df[df['component_name'] == 'purchase']
-#nomes_usuarios = {
-#    5250: "PixelZumbi87",
-#    76767: "N3oC0d3r",
-#    86540: "BatataHacker",
-#    144736: "TurboSapato",
-#    181212: "VortexManhoso",
-#    229911: "CactoVeloz",
-#    298950: "PlayGamer200",
-#    381543: "Codinome42",
-#    547685: "NoobSupremo",
-#    554278: "DragaodeMeia"
-#}
-#df['user_id'] = df['user_id'].replace(nomes_usuarios)
-
 
 #Total dos quatro dados
 total_compras = df_purchase.shape[0]
